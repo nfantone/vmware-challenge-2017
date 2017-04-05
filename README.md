@@ -1,5 +1,7 @@
 # VMware ng-challenge 2017
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nfantone/vmware-challenge-2017.svg)](https://greenkeeper.io/)
+
 Source code for the hosted ng-challenge test.
 
 ## Getting started
