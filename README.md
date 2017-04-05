@@ -23,6 +23,13 @@ HackerRank, run:
 
 The archive file _excludes_ `test.md` as well as the `app/answer` folder.
 
+## Question
+
+Details about this question, including user-facing instruction and judge-facing
+grading criteria, can be found in `test.md`.
+
+`test.md` is _not_ included when packaging the app using `npm run package`.
+
 ## Answer
 
 A very rudimentary answer is provided for testing purposes in the `app/answer` folder. To

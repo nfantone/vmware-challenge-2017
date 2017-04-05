@@ -49,7 +49,9 @@ export class FaasPlatformService implements IFaasPlatformService {
             map.set(id, new BehaviorSubject<IFaasUsage>({
                functionId: id,
                instances: 10000,
-               state: 'HEALTHY'
+               state: 'HEALTHY',
+               totalMonthlyInvocations: 12e+6,
+               totalMonthlyRuntime: 3.6e+6
             }));
             return map;
          }, usageSubjectById);
@@ -72,10 +74,12 @@ export class FaasPlatformService implements IFaasPlatformService {
       const random = Math.random();
       const additive = random > 0.5;
       const healthy = random > 0.05;
-      let instancesDelta = getRandomInt(500, 3000);
+      let instancesDelta = getRandomInt(250, 1500);
+      let runtimeIncrease = getRandomInt(25e+4, 15e+5);
       instancesDelta = additive ? instancesDelta : -1 * instancesDelta;
       newUsage.instances = Math.max(300, previousUsage.instances + instancesDelta);
       newUsage.state = healthy ? 'HEALTHY' : 'ERROR';
+      newUsage.totalMonthlyRuntime += runtimeIncrease;
       return newUsage;
    }
 
