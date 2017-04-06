@@ -21,7 +21,14 @@ HackerRank, run:
 
 `npm run package`
 
-The archive file _excludes_ `test.md` as well as the `app/answer` folder.
+The archive file _excludes_ `instructions.md` as well as the `app/answer` folder.
+
+## Question
+
+Details about this question, including user-facing instruction and judge-facing
+grading criteria, can be found in `instructions.md`.
+
+`instructions.md` is _not_ included when packaging the app using `npm run package`.
 
 ## Answer
 

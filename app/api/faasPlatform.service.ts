@@ -25,6 +25,20 @@ export interface IFaasPlatformService {
     * approximately every 2 seconds.
     */
    getFaasUsage$(id: string): Observable<IFaasUsage>;
+
+   /**
+    * Request to enable or disable the specified function.
+    *
+    * @param id
+    *    ID of the function to enable or disable.
+    *
+    * @param enable
+    *    True if the function should be enabled, false if it should be disabled.
+    *
+    * @param returns an Observable that emits true if the request was satisfied, else
+    * false and then completes.
+    */
+   enableFaas(id: string, enable: boolean): Observable<boolean>;
 }
 
 export { FaasPlatformService };

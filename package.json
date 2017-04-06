@@ -1,7 +1,7 @@
 {
-   "name": "ng-challenge-2017-part1",
+   "name": "ng-challenge-2017-part3",
    "version": "1.0.0",
-   "description": "Part 1 of the VMware Angular challenge 2017.",
+   "description": "Part 3 of the VMware Angular challenge 2017.",
    "license": "MIT",
    "scripts": {
       "start": "lite-server",

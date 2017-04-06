@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MemoryFormatPipe } from './memoryFormat.pipe';
+import { LoadingPipe } from './loading.pipe';
+import { MemoryFormatPipe } from "./memoryFormat.pipe";
 
 @NgModule({
    imports: [CommonModule],
-   declarations: [MemoryFormatPipe],
-   exports: [MemoryFormatPipe, CommonModule]
+   declarations: [
+      LoadingPipe,
+      MemoryFormatPipe
+   ],
+   exports: [
+      LoadingPipe,
+      MemoryFormatPipe,
+      CommonModule
+   ]
 })
 export class SharedModule { }

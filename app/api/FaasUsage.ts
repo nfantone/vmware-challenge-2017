@@ -17,4 +17,21 @@ export interface IFaasUsage {
     * normally. Else, 'ERROR'.
     */
    state: 'HEALTHY' | 'ERROR';
+
+   /**
+    * Total number of times the function has been invoked since the start of the
+    * monthly billing cycle.
+    */
+   totalMonthlyInvocations: number;
+
+   /**
+    * Number of miliseconds the function has run for in total since the beginning of the
+    * monthly billing cycle.
+    */
+   totalMonthlyRuntime: number;
+
+   /**
+    * True when this function is available to be invoked, else false.
+    */
+   enabled: boolean
 }
