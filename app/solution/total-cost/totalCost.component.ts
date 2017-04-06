@@ -4,7 +4,7 @@ const DEFAULT_CURRENCY = 'USD';
 
 @Component({
   moduleId: __moduleName,
-  selector: 'wx-cost',
+  selector: 'wx-total-cost',
   templateUrl: 'totalCost.component.html'
 })
 export class TotalCostComponent {
