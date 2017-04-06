@@ -5,7 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { SolutionComponent } from './solution.component';
 
 @NgModule({
-   imports: [SharedModule, ClarityModule.forRoot()],
+   imports: [SharedModule, ClarityModule.forChild()],
    declarations: [SolutionComponent],
    exports: [SolutionComponent],
    providers: [FaasStatusService]
