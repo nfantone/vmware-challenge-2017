@@ -7,14 +7,14 @@ import { FaasPlatformService } from './api/faasPlatform.service';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-   imports: [
-      BrowserModule,
-      SharedModule,
-      ClarityModule.forRoot(),
-      SolutionModule
-   ],
-   declarations: [AppComponent],
-   providers: [FaasPlatformService],
-   bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    SharedModule,
+    ClarityModule.forRoot(),
+    SolutionModule
+  ],
+  declarations: [AppComponent],
+  providers: [FaasPlatformService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

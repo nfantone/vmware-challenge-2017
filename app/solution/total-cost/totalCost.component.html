@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="card-block">
+        <div class="card-title">
+          {{selectedCurrency}} {{usdCost | currency:selectedCurrency | async | number:'2.2-2' }}
+        </div>
+        <div class="card-text">
+          current total FaaS monthly cost.
+        </div>
+      </div>
+      <div class="card-footer">
+        <clr-dropdown clrMenuPosition="top-left" [clrMenuPosition]="'bottom-right'">
+          <button class="btn btn-sm btn-link" clrDropdownToggle>
+            Currency
+            <clr-icon shape="caret down"></clr-icon>
+          </button>
+          <div class="dropdown-menu">
+            <button 
+              *ngFor="let currency of availableCurrencies" 
+              (click)="switchCurrency(currency)" 
+              class="dropdown-item" 
+              clrDropdownItem>
+              {{currency}}
+            </button>
+          </div>
+        </clr-dropdown>
+      </div>
+    </div>
+  </div>
+</div>
