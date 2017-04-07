@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { JsonpModule } from '@angular/http';
 import { ClarityModule } from 'clarity-angular';
 import { SharedModule } from '../shared/shared.module';
 import { SolutionComponent } from './solution.component';
@@ -10,7 +10,7 @@ import { CurrencyConversionPipe } from './pipes/currencyConversion.pipe';
 import { TotalCostComponent } from './total-cost/totalCost.component';
 
 @NgModule({
-   imports: [SharedModule, HttpModule, ClarityModule.forChild()],
+   imports: [SharedModule, JsonpModule, ClarityModule.forChild()],
    declarations: [SolutionComponent, TotalCostComponent, CurrencyConversionPipe],
    exports: [SolutionComponent],
    providers: [FaasStatusService, ExchangeRateService, CurrencyConversionService]
