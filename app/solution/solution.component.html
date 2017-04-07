@@ -1,1 +1,11 @@
-<h1>Your Solution Here</h1>
+<h3>Enabled functions</h3>
+<wx-faas-list 
+  [faasStatuses]="enabledFaasStatuse$ | async"
+  (onToggleEnable)="toggleFaas($event)">
+</wx-faas-list>
+
+<h3>Disabled functions</h3>
+<wx-faas-list 
+  [faasStatuses]="disabledFaasStatuse$ | async"
+  (onToggleEnable)="toggleFaas($event)">
+</wx-faas-list>

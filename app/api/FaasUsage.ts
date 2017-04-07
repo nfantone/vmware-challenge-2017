@@ -33,5 +33,5 @@ export interface IFaasUsage {
    /**
     * True when this function is available to be invoked, else false.
     */
-   enabled: boolean
+   enabled: boolean;
 }
